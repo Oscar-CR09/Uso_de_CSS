@@ -1,0 +1,129 @@
+h1{
+    text-align: center;
+    color: #457b9b;
+
+}
+div.contenedor{
+    border: 3px dashed greenyellow;
+    width: 30%;
+    height: 100px;
+    overflow: auto;
+    
+}
+div.contenedor.flotado{
+    float: left;
+} 
+div.contenedor.flotado.contenedor1{
+    border: 3px dashed greenyellow;
+}
+div.contenedor.flotado.contenedor2 {
+    border: 3px dashed cornflowerblue;
+    float:right;
+}
+div.contenedor.contenedor3 {
+    clear: both;
+    border: 3px dashed darkorange;
+    margin: auto;
+}
+div.contenedor4 {
+    width: 80%;
+    height: 20%;
+    overflow: auto;
+    margin: auto;
+    border: 3px dashed #a8dadc;
+}
+span{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: large;
+    background-color: #a8dadc;
+    border: 1px solid #457b9b;
+    height: 50px;
+    padding: 5px;
+    display: inline-block;
+
+}
+.menu{
+    list-style-type: none ;
+    text-align: center;
+
+}
+.menu li{
+    display: inline-block;
+    padding: 15px;
+    margin: 20px;
+    background-color: #ec6464;
+    border-radius: 5px;
+
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    position:sticky;
+}
+
+div.contenedor5 {
+    border: 3px solid greenyellow;
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid #a8dadc;
+    padding: 15px;
+    color: #457b9b;
+}
+div.contenedor5.decendiente p{
+    background-color: yellowgreen;
+}
+div.contenedor5.hijo > p{
+    background-color: #ffc6ff;
+}
+div.contenedor5.adyacente + p {
+    background-color: #fa00fa;
+}
+div.contenedor5.hermano ~ p {
+    background-color: #b3ff00;
+}
+
+p::selection{ /* dos puntos significa seudoelementos */
+    color: red;
+    background-color: yellow;
+}
+div.contenedor5 p::first-line{
+    /* dos puntos significa seudoelementos */
+    font-variant: small-caps;
+}
+div.contenedor5 p::first-letter {
+    /* dos puntos significa seudoelementos */
+    color: red;
+    font-size: 1.5em;
+}
+div.contenedor5 p::before{
+    content: "- ";
+}
+div.contenedor5 p::after {
+    content: " -";
+    font-size: 1.5em;
+    content: url();
+}
+div.contenedor6 {
+    border: 3px solid greenyellow;
+    width: 30%;
+    height: 20%;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    flex-wrap: nowrap;
+
+}
+img{
+    opacity: 0.5;
+    width: auto;
+    height: auto;
+    max-width: 80%;
+    max-height: 80%;
+    position: absolute;
+}
+img:hover{
+    opacity: 1.0    ;
+}
