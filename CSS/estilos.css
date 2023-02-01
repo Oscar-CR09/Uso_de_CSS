@@ -1,13 +1,32 @@
+
+html{
+    height: auto;
+    min-height: 100%;
+}
+body{
+    /* background: linear-gradient(#f72585, #3a0ca3); */
+    /* background: linear-gradient(to right,  #f72585, #3a0ca3); */
+    /* background: linear-gradient( #24404d, #6dbff1, black  ); */
+    /* background: linear-gradient(to bottom right, #f72585,#3a0ca3); */
+    /* background: linear-gradient(145deg, #f72585, #3a0ca3); */
+    /* background: radial-gradient(circle, #0d47a1, #42a5f5); */
+    background: radial-gradient(circle, #f72585, #3a0ca3); 
+    color: #f1faee;
+}
 h1{
     text-align: center;
-    color: #457b9b;
+    color: #ffffff;
+    text-shadow: 3px 2px 5px rgb(251, 255, 0);
 
 }
 div.contenedor{
-    border: 3px dashed greenyellow;
+    border: 3px dashed rgb(0, 0, 0);
     width: 30%;
     height: 100px;
     overflow: auto;
+    box-shadow: 2xp 2xp 5px 2px grey;
+    color: #ffffff;
+    border-radius: 15px;
     
 }
 div.contenedor.flotado{
